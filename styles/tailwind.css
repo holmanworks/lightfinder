@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  @layer base {
+    @font-face {
+      font-family: "Roobert";
+      font-weight: 400;
+      src: url('../fonts/Roobert-Regular.woff2') format('woff2');
+    }
+  }
+  
+  @layer base {
+    @font-face {
+      font-family: "Roobert";
+      font-weight: 500;
+      src: url('../fonts/Roobert-Medium.woff2') format('woff2');
+    }
+  }
+  
+  @layer base {
+    @font-face {
+      font-family: "Roobert";
+      font-weight: 600;
+      src: url('../fonts/Roobert-SemiBold.woff2') format('woff2');
+    }
+  }
+  
+  @layer base {
+    @font-face {
+      font-family: "Roobert";
+      font-weight: 700;
+      src: url('../fonts/Roobert-Bold.woff2') format('woff2');
+    }
+  }
+
+  @layer base {
+    @font-face {
+      font-family: "Barlow";
+      font-weight: 400;
+      src: url('../fonts/Barlow-Regular.ttf') format('truetype');
+    }
+  }
+
+  @layer base {
+    @font-face {
+      font-family: "Barlow";
+      font-weight: 500;
+      src: url('../fonts/Barlow-Medium.ttf') format('truetype');
+    }
+  }
+
+
+
+
+  /* Animation */
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+  
