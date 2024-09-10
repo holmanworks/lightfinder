@@ -2,9 +2,9 @@
 
 import * as React from "react"
 import { Drawer as DrawerPrimitive } from "vaul"
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils"
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 
 
@@ -43,14 +43,14 @@ DrawerOverlay.displayName = DrawerPrimitive.Overlay.displayName
 
 const DrawerContent = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content> & { onClose: () => void } // Add onClose prop here
+  React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content> & { onClose: () => void }
 >(({ className, children, onClose, ...props }, ref) => (
   <DrawerPortal>
     <DrawerOverlay />
     <DrawerPrimitive.Content
       ref={ref}
       className={cn(
-        "fixed inset-x-0 bottom-0 z-50 flex h-4/5 flex-col rounded-t-[16px] bg-white ring-1 ring-black/10",
+        "fixed inset-x-0 bottom-0 z-50 flex h-4/5 flex-col rounded-t-[16px] bg-white focus:outline-none",
         className
       )}
       {...props}
@@ -59,8 +59,8 @@ const DrawerContent = React.forwardRef<
         {/* Close Button */}
         <Button
           onClick={onClose}
-          variant='icon'
-          size='icon'
+          variant="icon"
+          size="icon"
           icon={<XMarkIcon className="w-5 h-5 stroke-black" />}
           className="absolute top-3 right-3 p-2 w-8 h-8 bg-gray-200 hover:bg-secondary active:bg-secondary"
         />

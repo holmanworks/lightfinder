@@ -1,18 +1,18 @@
-'use client'
-import React from 'react';
-import Image, { StaticImageData } from 'next/image';
-import { ChevronRightIcon } from '@heroicons/react/24/outline';
+"use client"
+import React from "react";
+import Image, { StaticImageData } from "next/image";
+import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 
 
 export interface CardProps {
   badge: React.ReactNode;
   highlight: string[];
-  icon: any;
+  icon: StaticImageData;
   title: string;
   socket: string;
   description: string[];
-  photos: any[];
+  photos: StaticImageData[];
 }
 
 

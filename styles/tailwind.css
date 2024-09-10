@@ -6,7 +6,7 @@
     @font-face {
       font-family: "Roobert";
       font-weight: 400;
-      src: url('../fonts/Roobert-Regular.woff2') format('woff2');
+      src: url("../fonts/Roobert-Regular.woff2") format("woff2");
     }
   }
   
@@ -14,7 +14,7 @@
     @font-face {
       font-family: "Roobert";
       font-weight: 500;
-      src: url('../fonts/Roobert-Medium.woff2') format('woff2');
+      src: url("../fonts/Roobert-Medium.woff2") format("woff2");
     }
   }
   
@@ -22,7 +22,7 @@
     @font-face {
       font-family: "Roobert";
       font-weight: 600;
-      src: url('../fonts/Roobert-SemiBold.woff2') format('woff2');
+      src: url("../fonts/Roobert-SemiBold.woff2") format("woff2");
     }
   }
   
@@ -30,7 +30,7 @@
     @font-face {
       font-family: "Roobert";
       font-weight: 700;
-      src: url('../fonts/Roobert-Bold.woff2') format('woff2');
+      src: url("../fonts/Roobert-Bold.woff2") format("woff2");
     }
   }
 
@@ -38,7 +38,7 @@
     @font-face {
       font-family: "Barlow";
       font-weight: 400;
-      src: url('../fonts/Barlow-Regular.ttf') format('truetype');
+      src: url("../fonts/Barlow-Regular.ttf") format("truetype");
     }
   }
 
@@ -46,7 +46,7 @@
     @font-face {
       font-family: "Barlow";
       font-weight: 500;
-      src: url('../fonts/Barlow-Medium.ttf') format('truetype');
+      src: url("../fonts/Barlow-Medium.ttf") format("truetype");
     }
   }
 

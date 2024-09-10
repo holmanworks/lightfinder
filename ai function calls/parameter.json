@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+      "year": {
+        "type": "number",
+        "description": "The year the car is made"
+      },
+      "make": {
+        "type": "string",
+        "description": "Name of car manufacture.  for example Toyota, Ford, Mercedez"
+      },
+      "model": {
+        "type": "string",
+        "description": "the model of the car.  Some people refer to it as trim"
+      }
+    },
+    "required": ["year", "make", "model"]
+  }

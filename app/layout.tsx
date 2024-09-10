@@ -1,23 +1,23 @@
-import { type Metadata } from 'next'
-import clsx from 'clsx'
-import { CSPostHogProvider } from './providers'
+import { type Metadata } from "next"
+import clsx from "clsx"
+import { CSPostHogProvider } from "./providers"
 
 
 
-import '@/styles/tailwind.css'
+import "@/styles/tailwind.css"
 
 
 export const metadata: Metadata = {
   title: {
-    template: '',
-    default: 'TYPE S',
+    template: "",
+    default: "TYPE S",
   },
   description:
-    '',
+    "",
   icons: {
-      icon: '/favicon.ico',
-      shortcut: '/favicon-16x16.png',
-      apple: '/apple-touch-icon.png'
+      icon: "/favicon.ico",
+      shortcut: "/favicon-16x16.png",
+      apple: "/apple-touch-icon.png"
     }
 }
 
@@ -32,7 +32,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'h-full scroll-smooth bg-background antialiased',
+        "h-full scroll-smooth bg-background antialiased",
       )}
     >
       <CSPostHogProvider>

@@ -1,4 +1,4 @@
-export function GetHelp(props: React.ComponentPropsWithoutRef<'svg'>) {
+export function GetHelp(_props: React.ComponentPropsWithoutRef<"svg">) {
   return (
 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.25002 7.37502C8.25002 6.40854 9.03354 5.62502 10 5.62502C10.9665 5.62502 11.75 6.40854 11.75 7.37502C11.75 8.04776 11.3704 8.63182 10.8138 8.92473C10.284 9.20346 10.0001 9.79899 10 10.3976V11.75M9.99999 13.5V15.25M18.75 10C18.75 14.8325 14.8325 18.75 10 18.75C5.16751 18.75 1.25 14.8325 1.25 10C1.25 5.16751 5.16751 1.25 10 1.25C14.8325 1.25 18.75 5.16751 18.75 10Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10"/>
@@ -7,7 +7,7 @@ export function GetHelp(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 
-export function Microphone(props: React.ComponentPropsWithoutRef<'svg'>) {
+export function Microphone(_props: React.ComponentPropsWithoutRef<"svg">) {
   return (
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.5 4.5V12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12V4.5C9.5 3.11929 10.6193 2 12 2C13.3807 2 14.5 3.11929 14.5 4.5Z" stroke="black" stroke-width="2"/>
@@ -23,7 +23,7 @@ export function Microphone(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 
-export function Send(props: React.ComponentPropsWithoutRef<'svg'>) {
+export function Send(_props: React.ComponentPropsWithoutRef<"svg">) {
   return (
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path 
@@ -35,7 +35,7 @@ export function Send(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 
-export function Location(props: React.ComponentPropsWithoutRef<'svg'>) {
+export function Location(_props: React.ComponentPropsWithoutRef<"svg">) {
   return (
 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.12501 18.25H12.875M5.39727 10.4469L8.84932 15.0492C9.11155 15.3988 9.52936 15.625 10 15.625C10.4706 15.625 10.8884 15.3988 11.1507 15.0492L14.6027 10.4469C15.3232 9.48641 15.75 8.29303 15.75 7C15.75 3.82438 13.1757 1.25 10 1.25C6.82435 1.25 4.25 3.82438 4.25 7C4.25 8.29303 4.67687 9.48641 5.39727 10.4469ZM11.4375 7.00002C11.4375 7.79391 10.7939 8.43752 10 8.43752C9.2061 8.43752 8.5625 7.79391 8.5625 7.00002C8.5625 6.20612 9.2061 5.56252 10 5.56252C10.7939 5.56252 11.4375 6.20612 11.4375 7.00002Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -44,7 +44,7 @@ export function Location(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 
-export function Stop(props: React.ComponentPropsWithoutRef<'svg'>) {
+export function Stop(_props: React.ComponentPropsWithoutRef<"svg">) {
   return (
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="5" y="5" width="14" height="14" stroke="white" stroke-width="2"/>

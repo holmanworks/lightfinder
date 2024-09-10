@@ -1,0 +1,20 @@
+//this function is used to look up LED bulb that fights user's vehicle base on the year of the car, make of the car, model or sometimes referred to as trim.
+//this is to make sure user select the right bulbs available for their car.  when return  links, display the actual url of the link
+
+
+
+
+export default {
+
+  fetch(request) {
+    const args = Object.fromEntries(new URL(request.url).searchParams)
+    //temp hardcode the url to test function working properly
+    return fetch(`https://evjltoxhkmsytbypgqxf.supabase.co/rest/v1/product?${args}`, {
+          method: 'GET',  // or 'POST', 'PUT', 'DELETE', etc.
+          headers: {
+              'Content-Type': 'application/json',
+              'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV2amx0b3hoa21zeXRieXBncXhmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTUxNDczMDQsImV4cCI6MjAzMDcyMzMwNH0.UMw9JfIaEkQcQm__kHHuoJmE8lyI-qRDJZ6hjeY12xs'
+          }
+    })
+  },
+};

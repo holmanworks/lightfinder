@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
 import React from "react"
-import avatar from '@/images/logos/512.png'
-import Image from 'next/image'
-import { Loading } from '@/components/ui/spinner';
-import { Container } from '@/components/ui/container'
+import avatar from "@/images/logos/512.png"
+import Image from "next/image"
+import { Loading } from "@/components/ui/spinner";
+import { Container } from "@/components/ui/container"
 
 
 interface MessageProps {

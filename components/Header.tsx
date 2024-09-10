@@ -1,23 +1,20 @@
-'use client'
+"use client"
 
-import { Fragment } from 'react'
-import { ChevronRightIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import Link from 'next/link'
-import { Popover, Transition } from '@headlessui/react'
-import clsx from 'clsx'
-import { Button } from '@components/ui/button'
-import { Container } from '@components/ui/container'
-import Image, { type ImageProps } from 'next/image'
-import { GetHelp, Location } from '@components/ui/icon'
-import { LogoBlack } from '@components/ui/logo'
+import { Fragment } from "react"
+import { ChevronRightIcon, XMarkIcon } from "@heroicons/react/24/outline"
+import Link from "next/link"
+import { Popover, Transition } from "@headlessui/react"
+import clsx from "clsx"
+import { Container } from "@components/ui/container"
+import { LogoBlack } from "@components/ui/logo"
 
 
 
-const locations = [
-  {
-    store: '1457 E Florence',    
-  },
-]
+// const locations = [
+//   {
+//     store: "1457 E Florence",    
+//   },
+// ]
 
 
 
@@ -27,7 +24,7 @@ function MobileNavLabel({
   children: React.ReactNode 
 }) {
   return (
-    <div className='px-2 h-6 text-sm text-grey flex items-center'>
+    <div className="px-2 h-6 text-sm text-grey flex items-center">
       {children}
     </div>
   )
@@ -68,14 +65,14 @@ function GetHelpIcon({ open }: { open: boolean }) {
     >
       <path d="M8.25002 7.37502C8.25002 6.40854 9.03354 5.62502 10 5.62502C10.9665 5.62502 11.75 6.40854 11.75 7.37502C11.75 8.04776 11.3704 8.63182 10.8138 8.92473C10.284 9.20346 10.0001 9.79899 10 10.3976V11.75M9.99999 13.5V15.25M18.75 10C18.75 14.8325 14.8325 18.75 10 18.75C5.16751 18.75 1.25 14.8325 1.25 10C1.25 5.16751 5.16751 1.25 10 1.25C14.8325 1.25 18.75 5.16751 18.75 10Z"
         className={clsx(
-          'origin-center transition',
-          open && 'scale-90 opacity-0',
+          "origin-center transition",
+          open && "scale-90 opacity-0",
         )}
       />
       <XMarkIcon
         className={clsx(
-          'origin-center transition',
-          !open && 'scale-90 opacity-0',
+          "origin-center transition",
+          !open && "scale-90 opacity-0",
         )}
       />
     </svg>
@@ -180,7 +177,7 @@ export function Header() {
         <nav className="flex items-center justify-between h-[56px]">
 
           {/* LOGO */}
-          <div className='flex justify-start'>
+          <div className="flex justify-start">
             <Link href="/" aria-label="Home">
               <LogoBlack />
             </Link>
@@ -191,7 +188,7 @@ export function Header() {
               
             {/* <div className="flex gap-x-1 px-[6px] h-8 items-center">
               <Location />
-              <div className='text-base text-black'>at</div>
+              <div className="text-base text-black">at</div>
               <div className="font-semibold text-base text-black truncate text-clip">
                 {locations[0].store}
               </div>

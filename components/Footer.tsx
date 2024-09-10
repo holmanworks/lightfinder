@@ -1,12 +1,11 @@
-'use client'
+"use client"
 
-import React, { useState, useEffect, useRef } from 'react';
-import { Button } from '@/components/ui/button';
-import { Microphone, Send, Stop } from '@components/ui/icon';
-import { Textarea } from '@components/ui/input';
-import { Container } from './ui/container';
-import { useRouter } from 'next/navigation';
-import { PowerBy } from './ui/logo';
+import React, { useState, useEffect, useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { Microphone, Send, Stop } from "@components/ui/icon";
+import { Textarea } from "@components/ui/input";
+import { useRouter } from "next/navigation";
+import { CraftBy } from "./ui/logo";
 
 
 interface FooterProps {
@@ -17,7 +16,7 @@ interface FooterProps {
 
 
 export function BigInput({ onSendMessage, className }: FooterProps) {
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
 
   const [isMicrophoneActive, setMicrophoneActive] = useState(false); // State to track microphone button
 
@@ -36,9 +35,9 @@ export function BigInput({ onSendMessage, className }: FooterProps) {
   const handleSendClick = () => {
     if (message.trim()) {
       onSendMessage(
-        <>Let's find the perfect bulbs for your <strong>2012 Honda Accord</strong>.</>
+        <>Let&apos;s find the perfect bulbs for your <strong>2012 Honda Accord</strong>.</>
       );
-      setMessage(''); // Clear the input field
+      setMessage(""); // Clear the input field
     }
   };
 
@@ -47,8 +46,8 @@ export function BigInput({ onSendMessage, className }: FooterProps) {
   };
 
   const glowAnimation = {
-    animation: 'glow 1s infinite ease-in-out', // Define the glow animation style inline
-    boxShadow: '0 0 0 4px rgba(0, 148, 214, 0.2)',
+    animation: "glow 1s infinite ease-in-out", // Define the glow animation style inline
+    boxShadow: "0 0 0 4px rgba(0, 148, 214, 0.2)",
   };
 
 
@@ -69,17 +68,17 @@ export function BigInput({ onSendMessage, className }: FooterProps) {
         />
 
         {/* Buttons */}
-        <div className='w-full flex items-center p-3'>
-          <div className='w-14 h-14'></div>
+        <div className="w-full flex items-center p-3">
+          <div className="w-14 h-14"></div>
 
           {/* Microphone */}
           <div className="flex-grow flex justify-center">
             <Button
               onClick={handleMicrophoneClick} // Handle click to toggle state
-              variant='icon'
-              size='icon'
+              variant="icon"
+              size="icon"
               icon={isMicrophoneActive ? <Stop className="w-6 h-6" /> : <Microphone className="w-6 h-6" />}
-              className={`w-14 h-14 ${isMicrophoneActive ? 'bg-primary hover:bg-primary/80 active:bg-primary/80' : 'bg-secondary hover:bg-secondary/80 active:bg-secondary/80'}`}
+              className={`w-14 h-14 ${isMicrophoneActive ? "bg-primary hover:bg-primary/80 active:bg-primary/80" : "bg-secondary hover:bg-secondary/80 active:bg-secondary/80"}`}
               style={isMicrophoneActive ? glowAnimation : {}} // Apply glow animation when active
             />
           </div>
@@ -87,9 +86,9 @@ export function BigInput({ onSendMessage, className }: FooterProps) {
           {/* Send */}
           <Button
             onClick={handleSendClick}
-            variant='icon'
-            size='icon'
-            color='primary'
+            variant="icon"
+            size="icon"
+            color="primary"
             icon={<Send className="w-6 h-6" />}
             className="w-14 h-14 ml-auto"
             disabled={!message.trim()}
@@ -124,36 +123,38 @@ export function SmallInput() {
   const router = useRouter(); // Initialize the router
 
   const handleInputClick = () => {
-    router.push('/'); // Navigate back to the homepage
+    router.push("/"); // Navigate back to the homepage
   };
 
   return (
-    <div className='w-full max-w-[672px] mx-auto px-3'>
+    <div className="w-full max-w-[672px] mx-auto px-3">
 
       <div 
-        className='w-full' 
+        className="w-full" 
         onClick={handleInputClick} // Make the entire component clickable
       >
-        <div className='flex w-full items-center rounded-full mx-auto h-14 bg-white ring-1 ring-black/10 cursor-pointer'>
+        <div className="flex w-full items-center rounded-full mx-auto h-14 bg-white border border-black/10 cursor-pointer">
           {/* Text */}
-          <div className='w-full px-5 text-hint text-lg font-normal'>
+          <div className="w-full px-5 text-hint text-lg font-normal">
             Type or say here
           </div>
 
           {/* Microphone Button */}
           <div className="flex-grow flex justify-center p-1">
             <Button
-              variant='icon'
-              size='icon'
+              variant="icon"
+              size="icon"
               icon={<Microphone className="w-6 h-6" />}
               className="w-12 h-12 bg-secondary hover:bg-secondary/80 active:bg-secondary/80"
             />
           </div>
         </div>
+      </div>
 
-        <div className='flex h-8 items-center justify-center opacity-90'>
-          <PowerBy />
-        </div>
+      <div className="flex h-8 items-center justify-center opacity-90">
+        <a href="https://makeyour.ai" target="_blank" rel="noopener noreferrer">
+          <CraftBy />
+        </a>
       </div>
 
     </div>

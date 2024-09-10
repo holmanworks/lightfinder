@@ -1,9 +1,9 @@
-'use client'
+"use client"
 
-import React, { useState, useEffect, useRef } from 'react';
-import { BigInput } from '@components/Footer'
-import { Header } from '@components/Header'
-import { MessageResponse } from '@components/Message'
+import React, { useState } from "react";
+import { BigInput } from "@components/Footer"
+import { Header } from "@components/Header"
+import { MessageResponse } from "@components/Message"
 
 
 

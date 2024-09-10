@@ -1,14 +1,14 @@
-'use client';
+"use client";
 import React, { useState } from "react";
-import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
-import Image, { StaticImageData } from 'next/image';
-import { Card, CardProps } from '@/components/Card';
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
+import { Card, CardProps } from "@/components/Card";
 import {
   Drawer,
   DrawerContent as BaseDrawerContent,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { Container } from './ui/container';
+import { Container } from "./ui/container";
 
 
 interface CardWithDrawerProps extends CardProps {}
@@ -37,7 +37,7 @@ export function CardWithDrawer({ title, badge, highlight, icon, socket, descript
 
       {/* Drawer Content */}
       <BaseDrawerContent onClose={() => setOpen(false)}>
-        <Container className='w-full overflow-y-auto py-[18px] space-y-5'>
+        <Container className="w-full overflow-y-auto py-[18px] space-y-5">
 
           <div className="flex">{badge}</div>
 
@@ -54,7 +54,7 @@ export function CardWithDrawer({ title, badge, highlight, icon, socket, descript
             ))}
           </div>
 
-          <div className='font-semibold text-lg text-black'>
+          <div className="font-semibold text-lg text-black">
             {socket} {title} Key Features
           </div>
 
@@ -66,15 +66,15 @@ export function CardWithDrawer({ title, badge, highlight, icon, socket, descript
               ))}
           </ul>
 
-          <div className='flex flex-col'>
-            <div className='font-semibold text-lg text-black'>
-              Can't find any in store?
+          <div className="flex flex-col">
+            <div className="font-semibold text-lg text-black">
+              Can&apos;t find any in store?
             </div>
             
-            <div className='flex font-semibold text-base text-primary hover:text-primary/80 underline underline-offset-2'>
+            <div className="flex font-semibold text-base text-primary hover:text-primary/80 underline underline-offset-2">
               <a href="https://www.autozone.com/electrical-and-lighting/fog-light/p/type-s-fog-light-lm57849-60-6/1151307_0_0" className="flex items-center gap-x-1">
                 Purchase online 
-                <ArrowTopRightOnSquareIcon className='w-4 h-4' />
+                <ArrowTopRightOnSquareIcon className="w-5 h-5" />
               </a>
             </div>
           </div>

@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-export function Loading(props: React.ComponentPropsWithoutRef<'svg'>) {
+export function Loading(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <div className="relative flex items-center justify-center">
       {/* Spinner */}
