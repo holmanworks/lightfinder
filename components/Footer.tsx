@@ -35,7 +35,7 @@ export function BigInput({ onSendMessage, className }: FooterProps) {
   const handleSendClick = () => {
     if (message.trim()) {
       onSendMessage(
-        <>Let&apos;s find the perfect bulbs for your <strong>2012 Honda Accord</strong>.</>
+        <>Let&apos;s find the perfect bulbs for your <strong>2012 Honda Accord Accord Accord Accord Accord Accord Accord Accord Accord Accord Accord Accord Accord Accord</strong>.</>
       );
       setMessage(""); // Clear the input field
     }

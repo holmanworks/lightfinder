@@ -9,7 +9,7 @@ import { MessageResponse } from "@components/Message"
 
 export default function Home() {
   // State to hold the current message
-  const [message, setMessage] = useState<React.ReactNode>("Hi, I'm your TYPE S expert light finder!");
+  const [message, setMessage] = useState<React.ReactNode>("Hi, I'm your TYPE S expert light finder! Hi, I'm your TYPE S expert light finder! Hi, I'm your TYPE S expert light finder!");
 
   // State to handle avatar size
   const [avatarSize, setAvatarSize] = useState(120);
@@ -26,18 +26,21 @@ export default function Home() {
 
   
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
 
-      {/* Header */}
-      <Header />
+      <div className="fixed top-0 z-30 w-full bg-background">
+        <Header />
+      </div>
 
       {/* Content */}
-      <main className="flex-grow overflow-y-auto">
+      <main className="flex-grow overflow-y-auto pt-[56px] pb-[220px]">
         <MessageResponse message={message} avatarSize={avatarSize} loading={loading} />
       </main>
 
       {/* Footer */}
-      <BigInput onSendMessage={updateMessage} className="z-20" />
+      <div className="fixed bottom-0 w-full bg-background z-20">
+        <BigInput onSendMessage={updateMessage} />
+      </div>
     </div>
   )
 }

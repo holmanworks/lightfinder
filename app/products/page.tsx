@@ -92,16 +92,20 @@ const cards: CardProps[] = [
 
 export default function Products() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
       {/* Header */}
-      <Header />
+      <div className="fixed top-0 z-30 w-full bg-background">
+        <Header />
+      </div>
 
-      {/* Cards */}
-      <main className="flex-grow overflow-y-auto py-4">
-        <MessageResult />
+      {/* Contents */}
+      <main className="flex-grow overflow-y-auto pt-[56px] pb-[88px]">
+        <div className="py-4">
+          <MessageResult />
+        </div>
 
         <Container>
-          <div className="mx-auto flex flex-col w-full gap-y-2 py-6">
+          <div className="mx-auto flex flex-col w-full gap-y-2 pb-8">
             {/* Render each card with its own drawer/dialog */}
             {cards.map((card, index) => (
               <CardWithDrawer key={index} {...card} />
@@ -111,7 +115,9 @@ export default function Products() {
       </main>
 
       {/* Footer */}
-      <SmallInput />
+      <div className="fixed bottom-0 w-full bg-background z-20">
+        <SmallInput />
+      </div>    
     </div>
   );
 }

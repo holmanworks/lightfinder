@@ -19,7 +19,7 @@ export interface CardProps {
 
 export function Card({ badge, highlight, icon }: CardProps) {
   return (
-    <div className="bg-white flex flex-row gap-x-2 items-center p-3 ring-1 ring-black/10 rounded-[12px] hover:ring-black/30 hover:shadow-md">
+    <div className="bg-white flex flex-row gap-x-2 items-center p-3 ring-1 ring-black/10 rounded-[12px] md:hover:ring-black/30 md:hover:shadow-md">
 
         {/* Image */}
         <Image 

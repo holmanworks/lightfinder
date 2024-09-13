@@ -31,7 +31,7 @@ export function MessageResponse({ message, avatarSize, loading }: MessageProps) 
         </div>
 
         {loading && (
-          <div className="absolute bottom-[220px] left-0 right-0 flex justify-center w-full z-50">
+          <div className="fixed bottom-[220px] left-0 right-0 flex justify-center w-full z-50">
             <Loading />
           </div>
         )}
@@ -47,7 +47,7 @@ export function MessageResult() {
     <Container>
       <div>
 
-        <div className="sm:text-4xl text-3xl font-normal text-black">
+        <div className="text-4xl font-normal text-black">
           <>Upgrade to these <strong>H11</strong> UltraBright LEDs for increased brightness and clarity.</>
         </div>
 
